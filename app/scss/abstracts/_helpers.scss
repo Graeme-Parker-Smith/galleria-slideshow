@@ -35,14 +35,6 @@
 	}
 }
 
-// TYPOGRAPHY
-
-.heading-2 {
-	font-weight: 700;
-	font-size: $font-heading-2;
-	line-height: $line-height-heading-2;
-}
-
 // Spacing
 .container {
 	margin: 0 auto;
@@ -139,4 +131,19 @@
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
 	align-items: center;
+}
+
+// TYPOGRAPHY
+
+.heading-2 {
+	font-weight: 700;
+	font-size: $font-heading-2;
+	line-height: $line-height-heading-2;
+	margin-bottom: 0.5rem;
+}
+
+.subhead-2 {
+	font-weight: 400;
+	font-size: $font-subhead-2;
+	line-height: $line-height-subhead-2;
 }
