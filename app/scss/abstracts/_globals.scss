@@ -1,4 +1,22 @@
-body {
-    font-family: $serif;
+*,
+*::before,
+*::after {
     margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
+    color: $gray;
+    font-size: $font-body;
+    line-height: $line-height-body;
+    font-family: $serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: $white;
 }

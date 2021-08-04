@@ -46,9 +46,30 @@
     opacity: 1;
   }
 }
-body {
-  font-family: "Libre Baskerville", serif;
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #7d7d7d;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .noscroll {
@@ -87,33 +108,10 @@ body {
   }
 }
 
-.heading {
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 40px;
-}
-@media (min-width: 64em) {
-  .heading {
-    font-size: 56px;
-    line-height: 64px;
-  }
-}
-.heading--hero {
-  margin: 3.5rem 0 1.5rem 0;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-}
-@media (min-width: 48em) {
-  .heading--hero {
-    line-height: 3.5rem;
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 64em) {
-  .heading--hero {
-    line-height: 5.5rem;
-    font-size: 5rem;
-  }
+.heading-2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .container {
@@ -128,11 +126,6 @@ body {
     padding: 2.5rem;
   }
 }
-@media (min-width: 64em) {
-  .container--pall {
-    padding: 10.3125rem;
-  }
-}
 .container--py {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -143,12 +136,6 @@ body {
     padding-bottom: 2.5rem;
   }
 }
-@media (min-width: 64em) {
-  .container--py {
-    padding-top: 10.3125rem;
-    padding-bottom: 10.3125rem;
-  }
-}
 .container--px {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -157,12 +144,6 @@ body {
   .container--px {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
-  }
-}
-@media (min-width: 64em) {
-  .container--px {
-    padding-right: 10.3125rem;
-    padding-left: 10.3125rem;
   }
 }
 .container--pt {
@@ -179,22 +160,12 @@ body {
 .container--pb {
   padding-bottom: 1.5rem;
 }
-@media (min-width: 64em) {
-  .container--pb {
-    padding-bottom: 10.3125rem;
-  }
-}
 .container--pl {
   padding-left: 1.5rem;
 }
 @media (min-width: 48em) {
   .container--pl {
     padding-left: 2.5rem;
-  }
-}
-@media (min-width: 75em) {
-  .container--pl {
-    padding-left: 10.3125rem;
   }
 }
 
@@ -241,7 +212,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
   border-bottom: 1px solid #e5e5e5;
 }
 .header .logo {
