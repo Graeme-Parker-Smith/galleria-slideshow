@@ -2,13 +2,15 @@
     position: relative;
     display: inline-block;
     color: $white;
-    margin-bottom: 1.5rem;
     transition: opacity 150ms ease-in;
+    vertical-align: middle;
     &:hover {
         cursor: pointer;
         opacity: 0.5;
     }
-
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
     &__img-wrapper img {
         display: block;
     }

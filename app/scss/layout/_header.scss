@@ -7,14 +7,26 @@
     .logo {
         height: 32px;
         width: 113px;
+
+        @include breakpoint-up(large) {
+            height: 48px;
+            width: 170px;
+        }
     }
     .slideshow-toggle {
-        font-size: 9px;
+        font-size: $font-link-2;
+        letter-spacing: $letter-spacing-link-2;
+        line-height: $line-height-link-2;
         font-weight: bold;
-        letter-spacing: 1.93px;
         color: #7d7d7d;
         text-transform: uppercase;
         transition: color 150ms ease-in;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-link-1;
+            letter-spacing: $letter-spacing-link-1;
+            line-height: $line-height-link-1;
+        }
 
         &:hover {
             color: $black;
