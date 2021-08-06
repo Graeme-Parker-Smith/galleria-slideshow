@@ -252,6 +252,20 @@ a {
   cursor: pointer;
 }
 
+.masonry-container {
+  margin: 0 auto;
+}
+@media (min-width: 48em) {
+  .masonry-container {
+    column-count: 2;
+  }
+}
+@media (min-width: 86.0em) {
+  .masonry-container {
+    column-count: 4;
+  }
+}
+
 .thumbnail {
   position: relative;
   display: inline-block;

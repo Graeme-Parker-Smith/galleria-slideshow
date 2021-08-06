@@ -1,0 +1,10 @@
+.masonry-container {
+    margin: 0 auto;
+
+    @include breakpoint-up(medium){
+        column-count: 2;
+    }
+    @include breakpoint-up(xxlarge){
+        column-count: 4;
+    }
+}
