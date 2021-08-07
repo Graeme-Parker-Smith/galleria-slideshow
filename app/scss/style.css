@@ -72,6 +72,17 @@ a {
   color: white;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+}
+
 .noscroll {
   overflow: hidden;
 }
@@ -299,10 +310,6 @@ a {
 .thumbnail:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-.thumbnail__img-wrapper img {
-  display: block;
-  max-width: 100%;
-}
 .thumbnail__text {
   position: absolute;
   bottom: 2rem;
@@ -316,6 +323,51 @@ a {
   right: 0;
   height: 170px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+.detail .art {
+  position: relative;
+}
+.detail .art__view-image {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 152px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  letter-spacing: 2.14px;
+  font-weight: 700;
+  transition: background-color 150ms ease-in;
+}
+.detail .art__view-image:hover {
+  background-color: rgba(59, 59, 59, 0.75);
+}
+.detail .art__modal {
+  display: none;
+}
+.detail .art__text {
+  position: relative;
+  bottom: 50px;
+  background-color: white;
+  width: 280px;
+  height: 104px;
+  padding: 1.5rem;
+}
+.detail .art__text .heading-2 {
+  color: black;
+}
+.detail .art__text__artist {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  bottom: -0.75rem;
+  left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

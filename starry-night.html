@@ -31,21 +31,37 @@
       <a class="slideshow-toggle">Stop Slideshow</a>
     </header>
 
-    View image
-    <!-- Modal start -->
-    Close
-    <!-- Modal end -->
-
-    <main class="container container-pall">
+    <main class="detail container container--pall">
       <section class="art">
+        <button class="art__view-image">
+          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#FFF" fill-rule="nonzero">
+              <path
+                d="M7.714 0l1.5 1.5-2.357 2.357 1.286 1.286L10.5 2.786l1.5 1.5V0zM3.857 6.857L1.5 9.214 0 7.714V12h4.286l-1.5-1.5 2.357-2.357zM8.143 6.857L6.857 8.143 9.214 10.5l-1.5 1.5H12V7.714l-1.5 1.5zM4.286 0H0v4.286l1.5-1.5 2.357 2.357 1.286-1.286L2.786 1.5z"
+              />
+            </g>
+          </svg>
+          view image
+        </button>
+        <!-- Modal Start -->
+        <div class="art__modal">Close</div>
+        <!-- Modal End -->
         <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/starry-night/hero-large.jpg"
+          />
           <img src="assets/starry-night/hero-small.jpg" alt="Starry Night" />
         </picture>
         <div class="art__text">
           <h1 class="heading-2">Starry Night</h1>
           <h4 class="subhead-1">Vincent Van Gogh</h4>
         </div>
-        <img src="assets/starry-night/artist.jpg" alt="Van Gogh" />
+        <img
+          class="art__text__artist"
+          src="assets/starry-night/artist.jpg"
+          alt="Van Gogh"
+        />
       </section>
       <section class="description">
         <p class="display">1889</p>

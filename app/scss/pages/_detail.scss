@@ -1,0 +1,57 @@
+.detail {
+    .art {
+        position: relative;
+
+        &__view-image {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            width: 152px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: $white;
+
+            text-transform: uppercase;
+            font-size: 0.625rem;
+            letter-spacing: 2.14px;
+            font-weight: 700;
+            transition: background-color 150ms ease-in;
+
+            &:hover {
+                background-color: rgba(59, 59, 59, 0.75);
+            }
+        }
+
+        &__modal {
+            display: none;
+        }
+
+        &__text {
+            // position: absolute;
+            position: relative;
+            bottom: 50px;
+
+            background-color: $white;
+            width: 280px;
+            height: 104px;
+            padding: 1.5rem;
+
+            .heading-2 {
+                color: $black;
+            }
+
+            &__artist {
+                height: 4rem;
+                width: 4rem;
+                position: absolute;
+                bottom: -0.75rem;
+                left: 1rem;
+            }
+        }
+    }
+}
