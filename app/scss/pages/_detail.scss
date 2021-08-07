@@ -1,4 +1,7 @@
 .detail {
+    p {
+        font-weight: 700;
+    }
     // Start art section
     .art {
         position: relative;
@@ -64,9 +67,7 @@
         > * {
             margin-bottom: 4.25rem;
         }
-        p {
-            font-weight: 700;
-        }
+
         .year {
             position: absolute;
             top: -0.5rem;
@@ -75,4 +76,5 @@
             color: $very-light-gray;
         }
     }
+    // End description section
 }

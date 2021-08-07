@@ -346,6 +346,33 @@ button {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
+.slideshow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+.slideshow__name {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  line-height: normal;
+  font-weight: 700;
+}
+.slideshow__name p:last-child {
+  font-size: 10px;
+  font-weight: 400;
+}
+.slideshow__controls {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.detail p {
+  font-weight: 700;
+}
 .detail .art {
   position: relative;
 }
@@ -396,9 +423,6 @@ button {
 }
 .detail .description > * {
   margin-bottom: 4.25rem;
-}
-.detail .description p {
-  font-weight: 700;
 }
 .detail .description .year {
   position: absolute;

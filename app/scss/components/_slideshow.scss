@@ -1,0 +1,23 @@
+.slideshow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $black;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #e5e5e5;
+    &__name {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        line-height: normal;
+        font-weight: 700;
+        p:last-child {
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+    &__controls {
+        display: flex;
+        gap: 1.5rem;
+    }
+}
