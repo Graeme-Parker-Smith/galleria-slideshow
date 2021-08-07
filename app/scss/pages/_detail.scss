@@ -115,7 +115,10 @@
 
         @include breakpoint-up(medium) {
             max-width: 83%;
-            padding: 75px 0 0 105px;
+            padding: 75px 0 12px 105px;
+            > * {
+                margin-bottom: 2.25rem;
+            }
 
             .year {
                 right: auto;

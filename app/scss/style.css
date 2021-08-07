@@ -361,9 +361,19 @@ button {
   line-height: normal;
   font-weight: 700;
 }
-.slideshow__name p:last-child {
+.slideshow__name__author {
   font-size: 10px;
   font-weight: 400;
+}
+@media (min-width: 48em) {
+  .slideshow__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .slideshow__name__author {
+    font-size: 13px;
+    line-height: 17px;
+  }
 }
 .slideshow__controls {
   display: flex;
@@ -473,7 +483,10 @@ button {
 @media (min-width: 48em) {
   .detail .description {
     max-width: 83%;
-    padding: 75px 0 0 105px;
+    padding: 75px 0 12px 105px;
+  }
+  .detail .description > * {
+    margin-bottom: 2.25rem;
   }
   .detail .description .year {
     right: auto;

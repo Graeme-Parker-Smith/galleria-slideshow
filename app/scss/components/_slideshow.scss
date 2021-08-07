@@ -11,9 +11,17 @@
         gap: 9px;
         line-height: normal;
         font-weight: 700;
-        p:last-child {
+        &__author {
             font-size: 10px;
             font-weight: 400;
+        }
+        @include breakpoint-up(medium){
+            font-size: $font-heading-3;
+            line-height: $line-height-heading-3;
+            &__author {
+                font-size: $font-subhead-2;
+                line-height: $line-height-subhead-2;
+            }
         }
     }
     &__controls {
