@@ -5,6 +5,11 @@
     // Start art section
     .art {
         position: relative;
+        @include breakpoint-up(medium) {
+            img {
+                max-width: 69.1%;
+            }
+        }
 
         &__view-image {
             position: absolute;
@@ -29,6 +34,12 @@
             &:hover {
                 background-color: rgba(59, 59, 59, 0.75);
             }
+
+            @include breakpoint-up(medium) {
+                top: auto;
+                bottom: 1rem;
+                left: 1rem;
+            }
         }
 
         &__modal {
@@ -45,6 +56,22 @@
             height: 104px;
             padding: 1.5rem;
 
+            @include breakpoint-up(medium) {
+                position: absolute;
+                top: -0.0625rem;
+                right: 0;
+
+                height: 238px;
+                width: 445px;
+
+                padding: 0 4rem 4rem 4rem;
+
+                .heading-2 {
+                    font-size: $font-heading-1;
+                    line-height: $line-height-heading-1;
+                }
+            }
+
             .heading-2 {
                 color: $black;
             }
@@ -55,6 +82,15 @@
                 position: absolute;
                 bottom: -0.75rem;
                 left: 1rem;
+
+                @include breakpoint-up(medium) {
+                    height: 8rem;
+                    width: 8rem;
+                    bottom: auto;
+                    left: auto;
+                    right: 55px;
+                    top: 238px;
+                }
             }
         }
     }

@@ -376,6 +376,11 @@ button {
 .detail .art {
   position: relative;
 }
+@media (min-width: 48em) {
+  .detail .art img {
+    max-width: 69.1%;
+  }
+}
 .detail .art__view-image {
   position: absolute;
   top: 1rem;
@@ -396,6 +401,13 @@ button {
 .detail .art__view-image:hover {
   background-color: rgba(59, 59, 59, 0.75);
 }
+@media (min-width: 48em) {
+  .detail .art__view-image {
+    top: auto;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
 .detail .art__modal {
   display: none;
 }
@@ -407,6 +419,20 @@ button {
   height: 104px;
   padding: 1.5rem;
 }
+@media (min-width: 48em) {
+  .detail .art__text {
+    position: absolute;
+    top: -0.0625rem;
+    right: 0;
+    height: 238px;
+    width: 445px;
+    padding: 0 4rem 4rem 4rem;
+  }
+  .detail .art__text .heading-2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
 .detail .art__text .heading-2 {
   color: black;
 }
@@ -416,6 +442,16 @@ button {
   position: absolute;
   bottom: -0.75rem;
   left: 1rem;
+}
+@media (min-width: 48em) {
+  .detail .art__text__artist {
+    height: 8rem;
+    width: 8rem;
+    bottom: auto;
+    left: auto;
+    right: 55px;
+    top: 238px;
+  }
 }
 .detail .description {
   position: relative;
