@@ -15,7 +15,7 @@
             font-size: 10px;
             font-weight: 400;
         }
-        @include breakpoint-up(medium){
+        @include breakpoint-up(medium) {
             font-size: $font-heading-3;
             line-height: $line-height-heading-3;
             &__author {
@@ -27,5 +27,8 @@
     &__controls {
         display: flex;
         gap: 1.5rem;
+    }
+    @include breakpoint-up(large) {
+        height: 96px;
     }
 }

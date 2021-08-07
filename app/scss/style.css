@@ -379,6 +379,11 @@ button {
   display: flex;
   gap: 1.5rem;
 }
+@media (min-width: 64em) {
+  .slideshow {
+    height: 96px;
+  }
+}
 
 .detail p {
   font-weight: 700;
@@ -493,6 +498,41 @@ button {
     top: 0;
     left: 0;
     letter-spacing: -4px;
+  }
+}
+@media (min-width: 88.75em) {
+  .detail {
+    display: flex;
+    margin-bottom: 35px;
+    margin-top: 60px;
+  }
+  .detail .art {
+    flex-basis: 62%;
+  }
+  .detail .art img {
+    max-width: 475px;
+  }
+  .detail .art .heading-2 {
+    margin-bottom: 1.5rem;
+  }
+  .detail .description {
+    flex-basis: 38%;
+    padding: 116px 126px 0 28px;
+  }
+  .detail .description > * {
+    margin-bottom: 5rem;
+  }
+  .detail .description .year {
+    top: 0;
+    right: auto;
+    left: auto;
+    letter-spacing: normal;
+  }
+  .detail .art__text__artist {
+    bottom: -65px;
+    left: 505px;
+    right: auto;
+    top: auto;
   }
 }
 

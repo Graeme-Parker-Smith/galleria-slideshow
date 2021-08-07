@@ -129,4 +129,39 @@
         }
     }
     // End description section
+
+    @include breakpoint-up(xxlarge) {
+        display: flex;
+        margin-bottom: 35px;
+        margin-top: 60px;
+        .art {
+            flex-basis: 62%;
+            img {
+                max-width: 475px;
+            }
+            .heading-2 {
+                margin-bottom: 1.5rem;
+            }
+        }
+        .description {
+            flex-basis: 38%;
+            padding: 116px 126px 0 28px;
+            > * {
+                margin-bottom: 5rem;
+            }
+
+            .year {
+                top: 0;
+                right: auto;
+                left: auto;
+                letter-spacing: normal;
+            }
+        }
+        .art__text__artist {
+            bottom: -65px;
+            left: 505px;
+            right: auto;
+            top: auto;
+        }
+    }
 }
