@@ -254,23 +254,26 @@ a {
 
 .masonry-container {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 48em) {
   .masonry-container {
-    column-count: 2;
-  }
-}
-@media (min-width: 86.0em) {
-  .masonry-container {
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 1478px;
+    height: 2903px;
     padding: 0 1.25rem 2.5rem 1.25rem;
   }
   .masonry-container > div.thumbnail {
-    margin-top: 2.5rem;
-    margin-bottom: 0;
+    width: 327px;
+    margin: 2.5rem 1.25rem 0 1.25rem;
+  }
+}
+@media (min-width: 88.75em) {
+  .masonry-container {
+    height: 1478px;
+  }
+  .masonry-container > div.thumbnail {
     margin: 2.5rem 1.25rem 0 1.25rem;
     width: 310px;
   }

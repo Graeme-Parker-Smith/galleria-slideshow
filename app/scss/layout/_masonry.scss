@@ -1,20 +1,21 @@
 .masonry-container {
     margin: 0 auto;
-    // column-count: 4;
- 
-    @include breakpoint-up(medium){
-        column-count: 2;
-    }
-    @include breakpoint-up(xxlarge){
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint-up(medium) {
         flex-wrap: wrap;
-        height: 1478px;
+        height: 2903px;
         padding: 0 1.25rem 2.5rem 1.25rem;
-        // gap: 40px;
         > div.thumbnail {
-            margin-top: 2.5rem;
-            margin-bottom: 0;
+            width: 327px;
+            margin: 2.5rem 1.25rem 0 1.25rem;
+        }
+    }
+    @include breakpoint-up(xxlarge) {
+        height: 1478px;
+        > div.thumbnail {
             margin: 2.5rem 1.25rem 0 1.25rem;
             width: 310px;
         }
