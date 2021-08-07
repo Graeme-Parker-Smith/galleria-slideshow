@@ -209,6 +209,12 @@ a {
   margin-bottom: 0.5rem;
 }
 
+.subhead-1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
 .subhead-2 {
   font-weight: 400;
   font-size: 13px;
