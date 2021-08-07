@@ -377,6 +377,9 @@ button {
   position: relative;
 }
 @media (min-width: 48em) {
+  .detail .art {
+    margin-bottom: 4rem;
+  }
   .detail .art img {
     max-width: 69.1%;
   }
@@ -466,6 +469,18 @@ button {
   right: 0;
   z-index: -1;
   color: #f3f3f3;
+}
+@media (min-width: 48em) {
+  .detail .description {
+    max-width: 83%;
+    padding: 75px 0 0 105px;
+  }
+  .detail .description .year {
+    right: auto;
+    top: 0;
+    left: 0;
+    letter-spacing: -4px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@
     .art {
         position: relative;
         @include breakpoint-up(medium) {
+            margin-bottom: 4rem;
             img {
                 max-width: 69.1%;
             }
@@ -110,6 +111,18 @@
             right: 0;
             z-index: -1;
             color: $very-light-gray;
+        }
+
+        @include breakpoint-up(medium) {
+            max-width: 83%;
+            padding: 75px 0 0 105px;
+
+            .year {
+                right: auto;
+                top: 0;
+                left: 0;
+                letter-spacing: -4px;
+            }
         }
     }
     // End description section
