@@ -152,3 +152,22 @@
 	font-size: $font-subhead-2;
 	line-height: $line-height-subhead-2;
 }
+
+.link-2 {
+	color: $gray;
+	font-size: $font-link-2;
+	line-height: $line-height-link-2;
+	letter-spacing: $letter-spacing-link-2;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.display-font {
+	font-size: 6.25rem;
+	line-height: 6.25rem;
+	@include breakpoint-up(medium) {
+		font-size: $font-display;
+		line-height: $line-height-display;
+	}
+}

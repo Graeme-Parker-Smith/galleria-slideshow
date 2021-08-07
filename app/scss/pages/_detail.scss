@@ -1,4 +1,5 @@
 .detail {
+    // Start art section
     .art {
         position: relative;
 
@@ -52,6 +53,26 @@
                 bottom: -0.75rem;
                 left: 1rem;
             }
+        }
+    }
+    // End Art section
+
+    // Start description section
+    .description {
+        position: relative;
+        padding-top: 4.25rem;
+        > * {
+            margin-bottom: 4.25rem;
+        }
+        p {
+            font-weight: 700;
+        }
+        .year {
+            position: absolute;
+            top: -0.5rem;
+            right: 0;
+            z-index: -1;
+            color: $very-light-gray;
         }
     }
 }
