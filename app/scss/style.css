@@ -60,6 +60,7 @@ html {
 }
 
 body {
+  position: relative;
   color: #7d7d7d;
   font-size: 14px;
   line-height: 28px;
@@ -85,6 +86,7 @@ button {
 
 .noscroll {
   overflow: hidden;
+  max-height: 100vh;
 }
 
 .pad-20 {
@@ -346,6 +348,36 @@ button {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
+.modal {
+  display: none;
+}
+.modal.open {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  place-items: center;
+}
+.modal.open .modal__content {
+  position: absolute;
+}
+.modal.open .modal__content__close {
+  position: absolute;
+  top: -2rem;
+  right: 1.5rem;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.modal.open .modal__content__img {
+  padding: 1.5rem;
+}
+
 .slideshow {
   display: flex;
   justify-content: space-between;
@@ -425,9 +457,6 @@ button {
     bottom: 1rem;
     left: 1rem;
   }
-}
-.detail .art__modal {
-  display: none;
 }
 .detail .art__text {
   position: relative;

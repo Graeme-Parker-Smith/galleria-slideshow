@@ -1,0 +1,33 @@
+.modal {
+    display: none;
+    &.open {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.9);
+
+        display: flex;
+        place-items: center;
+
+        .modal__content {
+            position: absolute;
+
+            &__close {
+                position: absolute;
+                top: -2rem;
+                right: 1.5rem;
+                background: transparent;
+                color: white;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+
+            &__img {
+                padding: 1.5rem;
+            }
+        }
+    }
+}

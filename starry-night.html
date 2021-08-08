@@ -31,9 +31,22 @@
       <a class="slideshow-toggle">Stop Slideshow</a>
     </header>
 
+    <!-- Modal Start -->
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <button class="modal__content__close">Close</button>
+        <img
+          class="modal__content__img"
+          src="assets/starry-night/gallery.jpg"
+          alt="Starry Night"
+        />
+      </div>
+    </div>
+    <!-- Modal End -->
+
     <main class="detail container container--pall">
       <section class="art">
-        <button class="art__view-image">
+        <button id="toggle-modal" class="art__view-image">
           <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
             <g fill="#FFF" fill-rule="nonzero">
               <path
@@ -43,9 +56,7 @@
           </svg>
           view image
         </button>
-        <!-- Modal Start -->
-        <div class="art__modal">Close</div>
-        <!-- Modal End -->
+
         <picture>
           <source
             media="(min-width: 768px)"
@@ -113,5 +124,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="app/js/modal.js"></script>
   </body>
 </html>

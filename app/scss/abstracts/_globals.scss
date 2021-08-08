@@ -10,6 +10,7 @@ html {
     box-sizing: border-box;
 }
 body {
+    position: relative;
     color: $gray;
     font-size: $font-body;
     line-height: $line-height-body;
