@@ -27,6 +27,9 @@
     &__controls {
         display: flex;
         gap: 1.5rem;
+        > * {
+            cursor: pointer;
+        }
     }
     @include breakpoint-up(large) {
         height: 96px;

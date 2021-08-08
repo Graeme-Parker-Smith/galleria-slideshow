@@ -7,7 +7,7 @@
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.9);
 
-        display: flex;
+        display: grid;
         place-items: center;
 
         .modal__content {

@@ -357,7 +357,7 @@ button {
   inset: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
+  display: grid;
   place-items: center;
 }
 .modal.open .modal__content {
@@ -410,6 +410,9 @@ button {
 .slideshow__controls {
   display: flex;
   gap: 1.5rem;
+}
+.slideshow__controls > * {
+  cursor: pointer;
 }
 @media (min-width: 64em) {
   .slideshow {
