@@ -1,35 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Galleria slideshow site</title>
-</head>
-<body>
-  Stop slideshow
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app/scss/style.css" />
+    <title>Frontend Mentor | Galleria slideshow site</title>
+  </head>
+  <body>
+    <header class="header container container--pall">
+      <img
+        class="logo"
+        src="assets/shared/logo.svg"
+        alt="logo"
+        width="113"
+        height="32"
+      />
+      <a href="index.html" class="slideshow-toggle">Stop Slideshow</a>
+    </header>
 
-  View image
-  <!-- Modal start -->
-  Close
-  <!-- Modal end -->
+    <!-- Modal Start -->
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <button class="modal__content__close">Close</button>
+        <img
+          class="modal__content__img"
+          src="assets/girl-with-pearl-earring/gallery.jpg"
+          alt="Girl with a Pearl Earring"
+        />
+      </div>
+    </div>
+    <!-- Modal End -->
 
-  Girl with a Pearl Earring
-  Johannes Vermeer
+    <main class="detail container container--pall">
+      <section class="art">
+        <button id="toggle-modal" class="art__view-image">
+          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#FFF" fill-rule="nonzero">
+              <path
+                d="M7.714 0l1.5 1.5-2.357 2.357 1.286 1.286L10.5 2.786l1.5 1.5V0zM3.857 6.857L1.5 9.214 0 7.714V12h4.286l-1.5-1.5 2.357-2.357zM8.143 6.857L6.857 8.143 9.214 10.5l-1.5 1.5H12V7.714l-1.5 1.5zM4.286 0H0v4.286l1.5-1.5 2.357 2.357 1.286-1.286L2.786 1.5z"
+              />
+            </g>
+          </svg>
+          view image
+        </button>
 
-  1665
-  The painting is a tronie, the Dutch 17th-century description of a 'head' that was 
-  not meant to be a portrait. It depicts a European girl wearing an exotic dress, 
-  an oriental turban, and what was thought to be a very large pearl as an earring. 
-  In 2014, Dutch astrophysicist Vincent Icke raised doubts about the material of the 
-  earring and argued that it looks more like polished tin than pearl on the grounds 
-  of the specular reflection, the pear shape and the large size of the earring.
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/girl-with-pearl-earring/hero-large.jpg"
+          />
+          <img
+            src="assets/girl-with-pearl-earring/hero-small.jpg"
+            alt="Girl with a Pearl Earring"
+          />
+        </picture>
+        <div class="art__text">
+          <h1 class="heading-2">Girl with a Pearl Earring</h1>
+          <h4 class="subhead-1">Johannes Vermeer</h4>
+          <img
+            class="art__text__artist"
+            src="assets/girl-with-pearl-earring/artist.jpg"
+            alt="Van Gogh"
+          />
+        </div>
+      </section>
+      <section class="description">
+        <p class="year display-font">1665</p>
+        <p>
+          The painting is a tronie, the Dutch 17th-century description of a
+          'head' that was not meant to be a portrait. It depicts a European girl
+          wearing an exotic dress, an oriental turban, and what was thought to
+          be a very large pearl as an earring. In 2014, Dutch astrophysicist
+          Vincent Icke raised doubts about the material of the earring and
+          argued that it looks more like polished tin than pearl on the grounds
+          of the specular reflection, the pear shape and the large size of the
+          earring.
+        </p>
+        <a
+          href="https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+          target="_blank"
+          class="link-2"
+          >Go to source</a
+        >
+      </section>
+    </main>
+    <footer class="slideshow">
+      <div class="slideshow__name">
+        <p class="slideshow__name__piece">Girl with a Pearl Earring</p>
+        <p class="slideshow__name__author">Johannes Vermeer</p>
+      </div>
+      <div class="slideshow__controls">
+        <a href="starry-night.html" id="prev" class="slideshow__controls__prev">
+          <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#000" fill="none" fill-rule="evenodd">
+              <path
+                d="M24.166 1.843L3.627 12.113l20.539 10.269V1.843z"
+                stroke-width="2"
+              />
+              <path fill="#D8D8D8" d="M.986.5h-1v22.775h1z" />
+            </g>
+          </svg>
+        </a>
+        <a href="guernica.html" id="next" class="slideshow__controls__next">
+          <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#000" fill="none" fill-rule="evenodd">
+              <path
+                d="M1.528 1.843l20.538 10.27L1.528 22.382V1.843z"
+                stroke-width="2"
+              />
+              <path fill="#D8D8D8" d="M24.708.5h1v22.775h-1z" />
+            </g>
+          </svg>
+        </a>
+      </div>
+    </footer>
 
-  Go to source <!-- URL: https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring -->
-
-  Girl with a Pearl Earring
-  Johannes Vermeer
-</body>
+    <script src="app/js/modal.js"></script>
+  </body>
 </html>
