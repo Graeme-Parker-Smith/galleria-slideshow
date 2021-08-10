@@ -47,10 +47,10 @@
             // position: absolute;
             position: relative;
             bottom: 50px;
-
+            display: table;
             background-color: $white;
             width: 280px;
-            height: 104px;
+
             padding: 1.5rem;
 
             @include breakpoint-up(medium) {
@@ -58,7 +58,6 @@
                 top: -0.0625rem;
                 right: 0;
 
-                height: 238px;
                 width: 445px;
 
                 padding: 0 4rem 4rem 4rem;
@@ -77,16 +76,16 @@
                 height: 4rem;
                 width: 4rem;
                 position: absolute;
-                bottom: -0.75rem;
+                bottom: -4rem;
                 left: 1rem;
 
                 @include breakpoint-up(medium) {
                     height: 8rem;
                     width: 8rem;
-                    bottom: auto;
+                    bottom: -128px;
                     left: auto;
                     right: 55px;
-                    top: 238px;
+                    top: auto;
                 }
             }
         }
@@ -131,7 +130,7 @@
         margin-bottom: 35px;
         margin-top: 60px;
         .art {
-            flex-basis: 62%;
+            flex-basis: 65%;
             img {
                 max-width: 475px;
             }
@@ -154,10 +153,10 @@
             }
         }
         .art__text__artist {
-            bottom: -65px;
-            left: 505px;
+            bottom: auto;
+            left: 95px;
             right: auto;
-            top: auto;
+            top: 496px;
         }
     }
 }

@@ -464,9 +464,9 @@ button {
 .detail .art__text {
   position: relative;
   bottom: 50px;
+  display: table;
   background-color: white;
   width: 280px;
-  height: 104px;
   padding: 1.5rem;
 }
 @media (min-width: 48em) {
@@ -474,7 +474,6 @@ button {
     position: absolute;
     top: -0.0625rem;
     right: 0;
-    height: 238px;
     width: 445px;
     padding: 0 4rem 4rem 4rem;
   }
@@ -490,17 +489,17 @@ button {
   height: 4rem;
   width: 4rem;
   position: absolute;
-  bottom: -0.75rem;
+  bottom: -4rem;
   left: 1rem;
 }
 @media (min-width: 48em) {
   .detail .art__text__artist {
     height: 8rem;
     width: 8rem;
-    bottom: auto;
+    bottom: -128px;
     left: auto;
     right: 55px;
-    top: 238px;
+    top: auto;
   }
 }
 .detail .description {
@@ -539,7 +538,7 @@ button {
     margin-top: 60px;
   }
   .detail .art {
-    flex-basis: 62%;
+    flex-basis: 65%;
   }
   .detail .art img {
     max-width: 475px;
@@ -561,10 +560,10 @@ button {
     letter-spacing: normal;
   }
   .detail .art__text__artist {
-    bottom: -65px;
-    left: 505px;
+    bottom: auto;
+    left: 95px;
     right: auto;
-    top: auto;
+    top: 496px;
   }
 }
 
