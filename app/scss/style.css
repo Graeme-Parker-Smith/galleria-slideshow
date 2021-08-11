@@ -46,6 +46,14 @@
     opacity: 1;
   }
 }
+@keyframes progressbar-countdown {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 *,
 *::before,
 *::after {
@@ -91,6 +99,10 @@ button {
 
 .pad-20 {
   padding: 20px;
+}
+
+.no-border {
+  border: none;
 }
 
 @media (max-width: 47.9375em) {
@@ -261,6 +273,9 @@ button {
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
+.header.no-border {
+  border: none;
+}
 .header .logo {
   height: 32px;
   width: 113px;
@@ -333,6 +348,11 @@ button {
 .thumbnail:not(:last-child) {
   margin-bottom: 1.5rem;
 }
+@media (min-width: 48em) {
+  .thumbnail:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}
 .thumbnail__text {
   position: absolute;
   bottom: 2rem;
@@ -385,6 +405,7 @@ button {
   color: black;
   padding: 1rem 1.5rem;
   border-top: 1px solid #e5e5e5;
+  position: relative;
 }
 .slideshow__name {
   display: flex;
@@ -418,6 +439,25 @@ button {
   .slideshow {
     height: 96px;
   }
+}
+.slideshow:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: black;
+  animation: progressbar-countdown;
+  /* Placeholder, this will be updated using javascript */
+  animation-duration: 60s;
+  /* We stop in the end */
+  animation-iteration-count: 1;
+  /* Stay on pause when the animation is finished finished */
+  animation-fill-mode: forwards;
+  /* We start paused, we start the animation using javascript */
+  /* We want a linear animation, ease-out is standard */
+  animation-timing-function: linear;
 }
 
 .detail p {

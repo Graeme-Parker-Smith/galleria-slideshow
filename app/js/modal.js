@@ -15,3 +15,11 @@ modal.addEventListener("click", (e) => {
     modal.classList.remove("open");
   }
 });
+
+
+// 
+const next = document.querySelector("#next");
+
+setTimeout(() => {
+  next.click();
+}, 60000)

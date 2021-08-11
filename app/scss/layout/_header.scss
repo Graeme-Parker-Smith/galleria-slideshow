@@ -3,7 +3,9 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e5e5e5;
-
+    &.no-border {
+        border: none;
+    }
     .logo {
         height: 32px;
         width: 113px;

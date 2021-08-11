@@ -5,6 +5,7 @@
     color: $black;
     padding: 1rem 1.5rem;
     border-top: 1px solid #e5e5e5;
+    position: relative;
     &__name {
         display: flex;
         flex-direction: column;
@@ -33,5 +34,27 @@
     }
     @include breakpoint-up(large) {
         height: 96px;
+    }
+
+    // progress bar
+    &:before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: black;
+        animation: progressbar-countdown;
+        /* Placeholder, this will be updated using javascript */
+        animation-duration: 60s;
+        /* We stop in the end */
+        animation-iteration-count: 1;
+        /* Stay on pause when the animation is finished finished */
+        animation-fill-mode: forwards;
+        /* We start paused, we start the animation using javascript */
+        // animation-play-state: paused;
+        /* We want a linear animation, ease-out is standard */
+        animation-timing-function: linear;
     }
 }

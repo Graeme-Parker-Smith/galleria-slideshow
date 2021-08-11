@@ -8,6 +8,10 @@
 	padding: 20px;
 }
 
+.no-border {
+	border: none;
+}
+
 .full-width-on-mobile {
 	@include breakpoint-down(small) {
 		width: 100%;
